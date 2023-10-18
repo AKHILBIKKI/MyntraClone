@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    height: 36px;
+    margin-left: 4%;
+}
+
+.Desktop-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 700;
+}
+
+.navbar sup {
+    color: #ff3f6c;
+    font-size: 10px;
+}
+
+.searchbar {
+    min-width: 200px;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    background-color: #f5f5f6;
+    border-radius: 5px;
+
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.search_bar {
+    background: #f5f5f6;
+    font-size: 14px;
+    width: 95%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.actionbar {
+    margin-right: 4%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-bars {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* Main starts here*/
+
+main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.Flat500 img {
+    width: 100%;
+}
+
+.Banner {
+    display: flex;
+}
+
+.leftimage {
+    width: 100%;
+}
+
+.rightimage {
+    width: 100%;
+}
+
+.festive img {
+    width: 100%;
+}
+
+.offers,
+.Category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers img,
+.Category img {
+    width: 250px;
+}
+
+/* footer is here */
+
+.footer_container {
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    color: #94969f;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
