@@ -1,6 +1,6 @@
 let items =[
     {
-        item_id : "001",
+        item_id : "1",
         item_image: 'items/1.webp',
         item_rating: {
             stars : "4.2",
@@ -13,7 +13,7 @@ let items =[
         item_discount : "51",
     },
     {
-        item_id : "002",
+        item_id : "2",
         item_image: 'items/2.webp',
         item_rating: {
             stars : "4",
@@ -26,7 +26,7 @@ let items =[
         item_discount : "47",
     },
     {
-        item_id : "003",
+        item_id : "3",
         item_image: 'items/3.webp',
         item_rating: {
             stars : "4.2",
@@ -39,7 +39,7 @@ let items =[
         item_discount : "70",
     },
     {
-        item_id : "004",
+        item_id : "4",
         item_image: 'items/4.webp',
         item_rating: {
             stars : "3.8",
@@ -52,7 +52,7 @@ let items =[
         item_discount : "78",
     },
     {
-        item_id : "005",
+        item_id : "5",
         item_image: 'items/5.webp',
         item_rating: {
             stars : "4.1",
@@ -65,7 +65,7 @@ let items =[
         item_discount : "65",
     },
     {
-        item_id : "006",
+        item_id : "6",
         item_image: 'items/6.webp',
         item_rating: {
             stars : "4.3",
@@ -78,7 +78,7 @@ let items =[
         item_discount : "50",
     },
     {
-        item_id : "007",
+        item_id : "7",
         item_image: 'items/7.webp',
         item_rating: {
             stars : "3.8",
@@ -91,7 +91,7 @@ let items =[
         item_discount : "75",
     },
     {
-        item_id : "008",
+        item_id : "8",
         item_image: 'items/8.webp',
         item_rating: {
             stars : "4.4",
@@ -104,7 +104,7 @@ let items =[
         item_discount : "25",
     },
     {
-        item_id : "009",
+        item_id : "9",
         item_image: 'items/9.webp',
         item_rating: {
             stars : "0",
@@ -117,7 +117,7 @@ let items =[
         item_discount : "67",
     },
     {
-        item_id : "010",
+        item_id : "10",
         item_image: 'items/10.webp',
         item_rating: {
             stars : "3.7",
@@ -130,7 +130,7 @@ let items =[
         item_discount : "10",
     },
     {
-        item_id : "011",
+        item_id : "11",
         item_image: 'items/11.webp',
         item_rating: {
             stars : "0",
@@ -143,7 +143,7 @@ let items =[
         item_discount : "70",
     },
     {
-        item_id : "012",
+        item_id : "12",
         item_image: 'items/12.webp',
         item_rating: {
             stars : "4.6",
@@ -156,7 +156,7 @@ let items =[
         item_discount : "80",
     },
     {
-        item_id : "013",
+        item_id : "13",
         item_image: 'items/13.webp',
         item_rating: {
             stars : "4.3",
@@ -169,7 +169,7 @@ let items =[
         item_discount : "56",
     },
     {
-        item_id : "014",
+        item_id: '14',
         item_image: 'items/14.webp',
         item_rating: {
             stars : "4.3",
@@ -180,9 +180,7 @@ let items =[
         item_sellingprice : "1999",
         item_actualprice : "0",
         item_discount : "0",
-    },
-
-
+    }
 
 
 ]

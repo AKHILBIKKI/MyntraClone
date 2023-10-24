@@ -92,6 +92,28 @@ header {
     align-items: center;
 }
 
+#items-bag{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    font-weight: 700;
+    align-items: center;
+    color: black;
+}
+
+.bag-count{
+    background-color: #ff3f6c;
+    border-radius: 50%;
+    line-height: 18px;
+    padding: 0 6px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    margin: -4px -11px;
+}
+
 /* Main starts here*/
 
 main {
@@ -274,11 +296,16 @@ main {
 
 }
 
-@media screen and (min-width: 580px) and (max-width: 700px) {
+@media screen and (min-width: 580px) and (max-width: 850px) {
 
     header {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .Desktop-navbar{
+        width: 85%;
+        
     }
 
 
