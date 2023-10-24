@@ -30,16 +30,22 @@ header {
 }
 
 .navbar {
+    padding: 29px 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     color: #282c3f;
     font-weight: 700;
+    border-bottom: 4px solid #ffffff;
+}
+
+.navbar:hover{
+    border-bottom: 4px solid rgb(201, 52, 102);
 }
 
 .navbar sup {
     color: #ff3f6c;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .searchbar {
@@ -66,8 +72,9 @@ header {
     font-size: 14px;
     width: 95%;
     padding: 10px;
-    border-style: none;
+    border: 1px solid #f5f5f6;
     border-radius: 5px;
+    outline: none;
 }
 
 .actionbar {
@@ -80,7 +87,7 @@ header {
 .action-bars {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     align-items: center;
 }
@@ -109,10 +116,6 @@ main {
 }
 
 
-.sale-item {
-    width: 220px;
-    margin: 10px;
-}
 
 /* footer is here */
 
