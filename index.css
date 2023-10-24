@@ -108,19 +108,10 @@ main {
     width: 100%;
 }
 
-.festive img {
-    width: 100%;
-}
 
-.offers,
-.Category {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.offers img,
-.Category img {
-    width: 250px;
+.sale-item {
+    width: 220px;
+    margin: 10px;
 }
 
 /* footer is here */
