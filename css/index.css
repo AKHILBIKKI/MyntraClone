@@ -39,7 +39,7 @@ header {
     border-bottom: 4px solid #ffffff;
 }
 
-.navbar:hover{
+.navbar:hover {
     border-bottom: 4px solid rgb(201, 52, 102);
 }
 
@@ -115,6 +115,96 @@ main {
     width: 100%;
 }
 
+.itemContainer {
+    width: 90%;
+    margin: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items_container {
+    width: 210px;
+    margin: 10px;
+    margin-top: 50px;
+    box-shadow: 5px 4px 3px rgb(196, 187, 187);
+}
+
+.items_image {
+    width: 100%;
+}
+
+.items_rating {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.items_compayname {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+}
+
+.items_name {
+    margin: 5px;
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.items_price {
+    margin: 5px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+}
+
+.items_sellingprice {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.items_actualprice {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.items_discount {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.items_addtobag {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px 7px 0px 7px;
+}
+
+.items_addingbag {
+    margin-right: 10px;
+}
+
 
 
 /* footer is here */
@@ -150,4 +240,71 @@ main {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+/* media from here */
+
+@media screen and (max-width: 580px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #943584;
+    }
+
+    .Desktop-navbar {
+        visibility: hidden;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .actionbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+        border-top: 1px solid #b7aaaa;
+    }
+
+    .searchbar {
+        flex-grow: 1;
+        width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 580px) and (max-width: 700px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .actionbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+    }
+
+    .searchbar {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: center;
+        border-bottom: 2px solid #943584;
+    }
+
+    .search_bar {
+        width: 70%;
+    }
+
+    main {
+        margin-top: 150px;
+        width: 100%;
+    }
 }
