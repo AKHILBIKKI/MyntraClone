@@ -9,8 +9,12 @@ function onload() {
 }
 
 function displayitems() {
-  let innerHtml = "";
+  let innerHtml = ``;
   let innerHtmlElement = document.querySelector(".itemContainer");
+    if(!innerHtmlElement)
+    {
+      return;
+    }
   items.forEach((item) => {
     innerHtml += `      
             <div class="items_container">
