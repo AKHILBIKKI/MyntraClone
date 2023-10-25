@@ -76,6 +76,10 @@ function removetheitem(itemid) {
     totaldiscount = TotalMrp -totalsellingprice;
 
     totalamount = TotalMrp - totaldiscount + Conveniencefee;
+    if(totalamount == 40)
+    {
+        totalamount =0;
+    }
 
     priceLoadElement.innerHTML =`
                 <div class="price_detail_container">
