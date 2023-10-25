@@ -1,7 +1,7 @@
 let items =[
     {
         item_id : "1",
-        item_image: '../items/1.webp',
+        item_image: 'items/1.webp',
         item_rating: {
             stars : "4.2",
             likes : "47.3k",
@@ -16,7 +16,7 @@ let items =[
     },
     {
         item_id : "2",
-        item_image: '../items/2.webp',
+        item_image: 'items/2.webp',
         item_rating: {
             stars : "4",
             likes : "64",
@@ -31,7 +31,7 @@ let items =[
     },
     {
         item_id : "3",
-        item_image: '../items/3.webp',
+        item_image: 'items/3.webp',
         item_rating: {
             stars : "4.2",
             likes : "179",
@@ -46,7 +46,7 @@ let items =[
     },
     {
         item_id : "4",
-        item_image: '../items/4.webp',
+        item_image: 'items/4.webp',
         item_rating: {
             stars : "3.8",
             likes : "4.2k",
@@ -61,7 +61,7 @@ let items =[
     },
     {
         item_id : "5",
-        item_image: '../items/5.webp',
+        item_image: 'items/5.webp',
         item_rating: {
             stars : "4.1",
             likes : "630",
@@ -76,7 +76,7 @@ let items =[
     },
     {
         item_id : "6",
-        item_image: '../items/6.webp',
+        item_image: 'items/6.webp',
         item_rating: {
             stars : "4.3",
             likes : "1.3k",
@@ -91,7 +91,7 @@ let items =[
     },
     {
         item_id : "7",
-        item_image: '../items/7.webp',
+        item_image: 'items/7.webp',
         item_rating: {
             stars : "3.8",
             likes : "48",
@@ -106,7 +106,7 @@ let items =[
     },
     {
         item_id : "8",
-        item_image: '../items/8.webp',
+        item_image: 'items/8.webp',
         item_rating: {
             stars : "4.4",
             likes : "1.6k",
@@ -121,7 +121,7 @@ let items =[
     },
     {
         item_id : "9",
-        item_image: '../items/9.webp',
+        item_image: 'items/9.webp',
         item_rating: {
             stars : "0",
             likes : "0",
@@ -136,7 +136,7 @@ let items =[
     },
     {
         item_id : "10",
-        item_image: '../items/10.webp',
+        item_image: 'items/10.webp',
         item_rating: {
             stars : "3.7",
             likes : "15",
@@ -151,7 +151,7 @@ let items =[
     },
     {
         item_id : "11",
-        item_image: '../items/11.webp',
+        item_image: 'items/11.webp',
         item_rating: {
             stars : "0",
             likes : "0",
@@ -166,7 +166,7 @@ let items =[
     },
     {
         item_id : "12",
-        item_image: '../items/12.webp',
+        item_image: 'items/12.webp',
         item_rating: {
             stars : "4.6",
             likes : "5",
@@ -181,7 +181,7 @@ let items =[
     },
     {
         item_id : "13",
-        item_image: '../items/13.webp',
+        item_image: 'items/13.webp',
         item_rating: {
             stars : "4.3",
             likes : "75",
@@ -196,7 +196,7 @@ let items =[
     },
     {
         item_id: '14',
-        item_image: '../items/14.webp',
+        item_image: 'items/14.webp',
         item_rating: {
             stars : "4.3",
             likes : "350",

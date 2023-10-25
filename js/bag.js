@@ -3,8 +3,9 @@ onload();
 
 function onload() {
     loadItemBag();
-    displayBag();
     itemsselected();
+    loadPriceDetails();
+    displayBag()
 }
   
 function loadItemBag(){
@@ -23,9 +24,8 @@ console.log(bagItems);
 
 function removetheitem(itemid) {
     bagItems = bagItems.filter(bagitem => bagitem !== itemid)
-
-    console.log(bagItems);
-    
+    localStorage.setItem('bagItems',JSON.stringify(bagItems));
+    onload();
 }
 
   function itemsselected(){
@@ -37,7 +37,7 @@ function removetheitem(itemid) {
     iteminnerHtml +=`
     <div class="item_container">
     <div class="item_selected_container">
-        <img class="item_image" src="${item.item_image}">
+        <img class="item_image" src="../${item.item_image}">
     </div>
 
     <div class="item_container_details">
@@ -57,6 +57,37 @@ function removetheitem(itemid) {
     });
 
     itemsElement.innerHTML =iteminnerHtml;
+  }
+
+  function loadPriceDetails(){
+    let priceLoadElement = document.querySelector('.price_details');
+
+    priceLoadElement.innerHTML =`
+                <div class="price_detail_container">
+                    <div class="price_detail_items">PRICE DETAILS (3 ITEMS)</div>
+                </div>
+                <div class="price_detail_summary">
+                    <div class="priceMrp">
+                        <span>Total MRP</span>
+                        <span class="priceMrp_value">₹2000</span>
+                    </div>
+                    <div class="priceMrp">
+                        <span>Discount on Mrp</span>
+                        <span class="priceMrp_value discount_value">-₹1000</span>
+                    </div>
+                    <div class="priceMrp">
+                        <span>Convenience Fee</span>
+                        <span class="priceMrp_value">₹2000</span>
+                    </div>
+                    <div class="priceMrp price_total">
+                        <span>Total Amount</span>
+                        <span class="priceMrp_value">₹2000</span>
+                    </div>
+                </div>
+                <div><button class="place_order_button">PLACE ORDER</button>
+                </div>
+    `;
+
   }
 
 
