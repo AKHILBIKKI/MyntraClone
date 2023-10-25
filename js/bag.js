@@ -1,11 +1,12 @@
 let newitems =[];
+const Conveniencefee = 40;
 onload();
 
 function onload() {
     loadItemBag();
     itemsselected();
-    loadPriceDetails();
     displayBag()
+    loadPriceDetails();
 }
   
 function loadItemBag(){
@@ -19,8 +20,6 @@ function loadItemBag(){
             }
     })
 }
-
-console.log(bagItems);
 
 function removetheitem(itemid) {
     bagItems = bagItems.filter(bagitem => bagitem !== itemid)
@@ -62,26 +61,42 @@ function removetheitem(itemid) {
   function loadPriceDetails(){
     let priceLoadElement = document.querySelector('.price_details');
 
+    let totalitems = bagItems.length;
+
+    let TotalMrp =0;
+    totalsellingprice =0;
+    let totaldiscount =0;
+    let totalamount =0;
+
+    newitems.forEach(item => {
+        TotalMrp += + item.item_actualprice;
+        totalsellingprice += +item.item_sellingprice;
+
+    });
+    totaldiscount = TotalMrp -totalsellingprice;
+
+    totalamount = TotalMrp - totaldiscount + Conveniencefee;
+
     priceLoadElement.innerHTML =`
                 <div class="price_detail_container">
-                    <div class="price_detail_items">PRICE DETAILS (3 ITEMS)</div>
+                    <div class="price_detail_items">PRICE DETAILS (${totalitems} ITEMS)</div>
                 </div>
                 <div class="price_detail_summary">
                     <div class="priceMrp">
                         <span>Total MRP</span>
-                        <span class="priceMrp_value">₹2000</span>
+                        <span class="priceMrp_value">₹${TotalMrp}</span>
                     </div>
                     <div class="priceMrp">
                         <span>Discount on Mrp</span>
-                        <span class="priceMrp_value discount_value">-₹1000</span>
+                        <span class="priceMrp_value discount_value">-₹${totaldiscount}</span>
                     </div>
                     <div class="priceMrp">
                         <span>Convenience Fee</span>
-                        <span class="priceMrp_value">₹2000</span>
+                        <span class="priceMrp_value">₹${Conveniencefee}</span>
                     </div>
                     <div class="priceMrp price_total">
                         <span>Total Amount</span>
-                        <span class="priceMrp_value">₹2000</span>
+                        <span class="priceMrp_value">₹${totalamount}</span>
                     </div>
                 </div>
                 <div><button class="place_order_button">PLACE ORDER</button>
